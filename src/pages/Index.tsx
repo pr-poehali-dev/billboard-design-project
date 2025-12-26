@@ -40,44 +40,40 @@ const Index = () => {
               </div>
 
               <div 
-                className="space-y-8 transition-all duration-300"
+                className="space-y-6 transition-all duration-300"
                 onMouseEnter={() => setActiveElement('content')}
                 onMouseLeave={() => setActiveElement(null)}
                 style={{
                   transform: activeElement === 'content' ? 'scale(1.02)' : 'scale(1)',
                 }}
               >
-                <h2 className="text-6xl font-black text-foreground leading-tight">
-                  Семейный<br />
-                  отдых<br />
-                  <span className="text-primary">мечты</span>
-                </h2>
+                <div>
+                  <h2 className="text-3xl font-bold text-secondary mb-2">
+                    Агентство детских праздников
+                  </h2>
+                  <h3 className="text-5xl font-black text-foreground leading-tight">
+                    Шоу и анимация!
+                  </h3>
+                </div>
 
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4">
-                    <div className="w-3 h-3 rounded-full bg-primary"></div>
-                    <p className="text-xl text-muted-foreground font-semibold">
-                      Туры для всей семьи
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-3 h-3 rounded-full bg-secondary"></div>
-                    <p className="text-xl text-muted-foreground font-semibold">
-                      Развлечения для всех возрастов
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-3 h-3 rounded-full bg-primary"></div>
-                    <p className="text-xl text-muted-foreground font-semibold">
-                      Безопасность и комфорт
-                    </p>
-                  </div>
+                <div className="space-y-3">
+                  <p className="text-xl text-muted-foreground font-semibold leading-relaxed">
+                    Организуем детский праздник под ключ.<br />
+                    Более <span className="text-primary font-black">150 программ</span>
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-r from-primary/20 to-secondary/20 p-4 rounded-2xl">
+                  <p className="text-2xl font-bold text-foreground italic">
+                    Придайте Вашему празднику<br />
+                    уникальное звучание!
+                  </p>
                 </div>
               </div>
             </div>
 
             <div 
-              className="flex items-center gap-6 transition-all duration-300 hover:gap-8"
+              className="space-y-4 transition-all duration-300"
               onMouseEnter={() => setActiveElement('contact')}
               onMouseLeave={() => setActiveElement(null)}
             >
@@ -86,7 +82,7 @@ const Index = () => {
                   <Icon name="Phone" size={24} className="text-primary-foreground" />
                 </div>
                 <span className="text-3xl font-bold text-foreground">
-                  8-800-555-35-35
+                  8 495 132-32-88
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -94,7 +90,7 @@ const Index = () => {
                   <Icon name="Globe" size={24} className="text-white" />
                 </div>
                 <span className="text-2xl font-semibold text-foreground">
-                  ananas-holiday.ru
+                  www.ananas-holiday.ru
                 </span>
               </div>
             </div>
@@ -127,21 +123,21 @@ const Index = () => {
 
             <div className="absolute top-12 right-12 flex gap-6">
               <div className="w-32 h-32 bg-primary rounded-3xl shadow-xl flex items-center justify-center text-7xl animate-pulse">
-                🏖️
+                🎪
               </div>
             </div>
 
             <div className="absolute bottom-12 right-12 flex gap-6">
               <div className="w-28 h-28 bg-secondary rounded-3xl shadow-xl flex items-center justify-center text-6xl">
-                👨‍👩‍👧‍👦
+                🎉
               </div>
               <div className="w-28 h-28 bg-primary rounded-3xl shadow-xl flex items-center justify-center text-6xl">
-                ✈️
+                🎭
               </div>
             </div>
 
             <div className="absolute top-1/2 left-12 w-24 h-24 bg-white rounded-full shadow-xl flex items-center justify-center text-5xl animate-bounce">
-              ☀️
+              🎈
             </div>
           </div>
         </div>
